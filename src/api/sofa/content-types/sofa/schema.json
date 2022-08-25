@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sofas",
+  "info": {
+    "singularName": "sofa",
+    "pluralName": "sofas",
+    "displayName": "Диваны",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "avatar_url": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {}
+    },
+    "spinka": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "seats": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "lenght": {
+      "type": "integer",
+      "pluginOptions": {}
+    },
+    "width": {
+      "type": "integer",
+      "pluginOptions": {}
+    },
+    "pillows_count": {
+      "type": "integer",
+      "pluginOptions": {}
+    },
+    "shop": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::shop.shop",
+      "inversedBy": "sofas"
+    },
+    "order_id": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    }
+  }
+}
