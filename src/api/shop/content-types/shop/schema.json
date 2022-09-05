@@ -32,7 +32,7 @@
       "type": "string"
     },
     "chatId": {
-      "type": "integer"
+      "type": "biginteger"
     }
   }
 }
