@@ -33,6 +33,12 @@
     },
     "chatId": {
       "type": "biginteger"
+    },
+    "acivitys": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::activity.activity",
+      "mappedBy": "shop"
     }
   }
 }

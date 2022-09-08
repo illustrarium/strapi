@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "activitys",
+  "info": {
+    "singularName": "activity",
+    "pluralName": "activitys",
+    "displayName": "Активность",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "shop": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::shop.shop",
+      "inversedBy": "acivitys"
+    },
+    "response": {
+      "type": "json"
+    },
+    "method": {
+      "type": "string"
+    },
+    "chatId": {
+      "type": "biginteger"
+    }
+  }
+}
