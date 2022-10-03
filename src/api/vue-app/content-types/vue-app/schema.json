@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vue_apps",
+  "info": {
+    "singularName": "vue-app",
+    "pluralName": "vue-apps",
+    "displayName": "Vue-apps"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "shops": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::shop.shop"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

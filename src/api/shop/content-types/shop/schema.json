@@ -39,6 +39,9 @@
       "relation": "oneToMany",
       "target": "api::activity.activity",
       "mappedBy": "shop"
+    },
+    "city": {
+      "type": "string"
     }
   }
 }
