@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "salons",
+  "info": {
+    "singularName": "salon",
+    "pluralName": "salons",
+    "displayName": "Фирменные салоны"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "address": {
+      "type": "richtext"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "decors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::decor.decor",
+      "mappedBy": "salon"
+    }
+  }
+}

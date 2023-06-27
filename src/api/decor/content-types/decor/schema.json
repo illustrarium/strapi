@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "decors",
+  "info": {
+    "singularName": "decor",
+    "pluralName": "decors",
+    "displayName": "Декор",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "invent_num": {
+      "type": "integer"
+    },
+    "img_url": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "composition": {
+      "type": "boolean"
+    },
+    "comment": {
+      "type": "richtext"
+    },
+    "salon": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::salon.salon",
+      "inversedBy": "decors"
+    }
+  }
+}
