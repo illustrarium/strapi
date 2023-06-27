@@ -10,7 +10,11 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "paperTrail": {
+      "enabled": true
+    }
+  },
   "attributes": {
     "title": {
       "type": "string"
